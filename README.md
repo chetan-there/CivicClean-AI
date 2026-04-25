@@ -69,66 +69,6 @@ while earning reward points for active participation.
 
 ## 🗂️ Project Structure
 
-waste-management-system/
-│
-├── frontend/                      # React Application
-│   └── src/
-│       ├── components/
-│       │   └── common/
-│       │       └── ProtectedRoute.jsx
-│       ├── context/
-│       │   └── AuthContext.js     # Global Auth State
-│       ├── pages/
-│       │   ├── User/
-│       │   │   ├── Login.jsx
-│       │   │   ├── Register.jsx
-│       │   │   ├── UserDashboard.jsx
-│       │   │   ├── ReportWaste.jsx
-│       │   │   └── ComplaintStatus.jsx
-│       │   ├── Admin/
-│       │   │   ├── AdminDashboard.jsx
-│       │   │   └── ManageComplaints.jsx
-│       │   └── NotFound.jsx
-│       ├── services/
-│       │   ├── api.js             # Axios Base Config
-│       │   ├── authService.js     # Auth API Calls
-│       │   ├── complaintService.js
-│       │   ├── userService.js
-│       │   ├── teamService.js
-│       │   └── aiService.js
-│       └── App.js
-│
-├── backend/                       # Spring Boot Application
-│   └── src/main/java/
-│       └── com/waste/management/
-│           ├── controller/        # REST Controllers
-│           │   ├── AuthController.java
-│           │   ├── ComplaintController.java
-│           │   ├── UserController.java
-│           │   └── CleanupTeamController.java
-│           ├── service/           # Business Logic
-│           │   ├── UserService.java
-│           │   ├── ComplaintService.java
-│           │   ├── RewardService.java
-│           │   └── CleanupTeamService.java
-│           ├── repository/        # Database Layer
-│           ├── model/             # Entity Classes
-│           │   ├── User.java
-│           │   ├── Complaint.java
-│           │   ├── Reward.java
-│           │   └── CleanupTeam.java
-│           ├── dto/               # Data Transfer Objects
-│           ├── config/            # Security Config
-│           └── exception/         # Global Exception Handler
-│
-├── ai-module/                     # Python Flask AI Service
-│   ├── app.py                     # Flask API Server
-│   ├── classifier.py              # Waste Classifier
-│   ├── requirements.txt
-│   └── .env
-│
-└── README.md
-
 | Layer | Module | Purpose |
 |---|---|---|
 | Frontend | React (src/components, pages, services) | User Interface & Client-side Logic |
