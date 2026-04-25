@@ -1,0 +1,31 @@
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env.local
+frontend/.env.production
+
+# Backend
+backend/target/
+backend/.mvn/
+backend/*.jar
+
+# AI Module
+ai-module/__pycache__/
+ai-module/temp_uploads/
+ai-module/.env
+ai-module/venv/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database
+*.sql.bak
+
+# Logs
+*.log
